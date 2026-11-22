@@ -1,0 +1,13 @@
+# Pearl Bipin Pulickal - MBA Profile
+
+> Pearl Bipin Pulickal is an MBA graduate in Data Science from Manipal Academy of Higher Education (MAHE), Class of 2026. This website serves as a front-facing professional profile and credential verification page.
+
+## Main Sections
+- [Professional Summary](https://pearlbipinmba.vercel.app/#): Overview of data science and business strategy background.
+- [Convocation Gallery](https://pearlbipinmba.vercel.app/#): Photos from the 34th MAHE Convocation.
+- [Official Credentials](https://pearlbipinmba.vercel.app/#credentials): Direct links to official degree and transcript PDFs.
+
+## Verification & Documents
+- [Degree Certificate (PDF)](https://pearlbipinmba.vercel.app/documents/MAHEDC.pdf): Official MAHE degree conferral.
+- [Official Transcript (PDF)](https://pearlbipinmba.vercel.app/documents/MAHETC.pdf): Complete academic record, CGPA 8.98.
+- [Verification Ledger](https://pearlbipinverifications.vercel.app): A comprehensive, source-linked record of research, media, and professional history.
