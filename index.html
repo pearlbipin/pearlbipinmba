@@ -3,14 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pearl Bipin Pulickal | MBA Data Science</title>
-    <!-- Importing Google Fonts for a classic, polished look -->
+
+    <!-- Primary Meta Tags -->
+    <title>Pearl Bipin Pulickal | MBA in Data Science (MAHE)</title>
+    <meta name="title" content="Pearl Bipin Pulickal | MBA in Data Science (MAHE)">
+    <meta name="description" content="Official professional profile of Pearl Bipin Pulickal, Master of Business Administration (MBA) in Data Science graduate from Manipal Academy of Higher Education (MAHE), Class of 2026.">
+    <meta name="author" content="Pearl Bipin Pulickal">
+    <meta name="keywords" content="Pearl Bipin Pulickal, MBA, Data Science, MAHE, Manipal Academy of Higher Education, Business Strategy, Data Analytics, Class of 2026">
+    <link rel="canonical" href="https://pearlbipinmba.vercel.app/">
+
+    <!-- Open Graph / LinkedIn / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://pearlbipinmba.vercel.app/">
+    <meta property="og:title" content="Pearl Bipin Pulickal | MBA in Data Science">
+    <meta property="og:description" content="Bridging quantitative rigor and executive strategy. View official credentials and convocation highlights from MAHE.">
+    <!-- Using your handshake photo as the preview image -->
+    <meta property="og:image" content="https://pearlbipinmba.vercel.app/documents/PBMBA2.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pearlbipinmba.vercel.app/">
+    <meta property="twitter:title" content="Pearl Bipin Pulickal | MBA in Data Science">
+    <meta property="twitter:description" content="Bridging quantitative rigor and executive strategy. View official credentials and convocation highlights from MAHE.">
+    <meta property="twitter:image" content="https://pearlbipinmba.vercel.app/documents/PBMBA2.jpg">
+
+    <!-- JSON-LD Structured Data for Google Search (Person & Education Schema) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Pearl Bipin Pulickal",
+      "url": "https://pearlbipinmba.vercel.app/",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Manipal Academy of Higher Education (MAHE)"
+      },
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Master of Business Administration",
+        "educationalLevel": "Postgraduate",
+        "about": "Data Science"
+      },
+      "sameAs": [
+        "https://pearlbipinverifications.vercel.app"
+      ]
+    }
+    </script>
+
+    <!-- Favicon (Minimalist Necktie) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 5 L65 25 L50 85 L35 25 Z' fill='%23800000'/%3E%3Cpath d='M50 5 L35 25 L65 25 Z' fill='%231a1a1a'/%3E%3Cpath d='M40 25 L50 40 L60 25 Z' fill='%23fcfcfc'/%3E%3C/svg%3E">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     
     <style>
-        /* CSS Reset & Variables */
+        /* Reset & Variables */
         * {
             margin: 0;
             padding: 0;
@@ -34,7 +83,6 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Layout Container */
         .container {
             max-width: 1100px;
             margin: 0 auto;
@@ -121,7 +169,7 @@
             background-color: #fff;
         }
 
-        /* About / Summary Section */
+        /* Summary / Executive Profile Section */
         .summary {
             padding: 80px 0;
             text-align: center;
@@ -136,55 +184,70 @@
         }
 
         .summary p {
-            max-width: 750px;
+            max-width: 800px;
             margin: 0 auto;
             font-size: 1.1rem;
             color: #555;
             line-height: 1.8;
         }
 
-        /* Gallery Section */
+        /* Core Competencies */
+        .competencies {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .competency-item {
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 5px;
+        }
+
+        /* Gallery Section - Natural Aspect Ratio */
         .gallery-section {
             padding: 80px 0;
             background-color: #fff;
             border-top: 1px solid #eaeaea;
         }
 
-        .grid {
+        .gallery-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
             margin-top: 40px;
+            align-items: start;
         }
 
-        .grid-item {
+        .gallery-item {
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            background-color: #f5f5f5;
         }
 
-        .grid-item img {
+        .gallery-item img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
             display: block;
             transition: transform 0.4s ease;
         }
 
-        .grid-item:hover img {
-            transform: scale(1.03);
+        .gallery-item:hover img {
+            transform: scale(1.02);
         }
 
-        .grid-item.wide {
+        .gallery-item.full-width {
             grid-column: span 2;
-            height: 450px;
         }
 
-        .grid-item.tall {
-            height: 350px;
-        }
-
-        /* Hard Proof / Documents Section */
+        /* Proof / Documents Section */
         .proof-section {
             padding: 80px 0;
             background-color: var(--primary);
@@ -264,9 +327,8 @@
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
-            .grid { grid-template-columns: 1fr; }
-            .grid-item.wide { grid-column: span 1; height: 300px; }
-            .grid-item.tall { height: 300px; }
+            .gallery-grid { grid-template-columns: 1fr; }
+            .gallery-item.full-width { grid-column: span 1; }
             .doc-card { width: 100%; }
         }
     </style>
@@ -288,15 +350,23 @@
         </div>
     </header>
 
-    <!-- Professional Summary -->
+    <!-- Executive Summary -->
     <section class="summary">
         <div class="container">
-            <h3 class="section-title">Bridging Data & Strategy</h3>
+            <h3 class="section-title">Bridging Quantitative Rigor & Executive Strategy</h3>
             <p>
-                An MBA graduate specializing in Data Science, equipped to translate complex data into actionable business strategies. 
-                Combining a strong technical foundation with core business acumen in finance, marketing, and strategic management to drive 
-                data-driven decision-making and organizational growth.
+                An MBA graduate positioned at the intersection of advanced data science and business leadership. 
+                Equipped to translate complex datasets into actionable, high-impact corporate strategies. By fusing 
+                technical analytical depth with core competencies in financial management, marketing, and organizational leadership, 
+                I drive data-informed decision-making that delivers measurable business value.
             </p>
+
+            <div class="competencies">
+                <span class="competency-item">Strategic Decision Making</span>
+                <span class="competency-item">Financial Acumen</span>
+                <span class="competency-item">Data-Driven Leadership</span>
+                <span class="competency-item">AI & Machine Learning</span>
+            </div>
         </div>
     </section>
 
@@ -306,18 +376,18 @@
             <h3 class="section-title" style="text-align: center;">Convocation Highlights</h3>
             <p style="text-align: center; color: #777; margin-bottom: 20px;">The 34th Convocation at MAHE, Manipal.</p>
             
-            <div class="grid">
-                <div class="grid-item wide">
-                    <img src="documents/PBMBA2.jpg" alt="Receiving MBA Degree">
+            <div class="gallery-grid">
+                <div class="gallery-item full-width">
+                    <img src="documents/PBMBA1.png" alt="34th Convocation MAHE" loading="lazy">
                 </div>
-                <div class="grid-item tall">
-                    <img src="documents/PBMBA3.jpg" alt="Walking on stage">
+                <div class="gallery-item">
+                    <img src="documents/PBMBA2.jpg" alt="Receiving MBA Degree" loading="lazy">
                 </div>
-                <div class="grid-item tall">
-                    <img src="documents/PBMBA4.jpg" alt="Stage with Vice Chancellor">
+                <div class="gallery-item">
+                    <img src="documents/PBMBA3.jpg" alt="Walking on stage" loading="lazy">
                 </div>
-                <div class="grid-item wide">
-                    <img src="documents/PBMBA1.png" alt="34th Convocation MAHE">
+                <div class="gallery-item full-width">
+                    <img src="documents/PBMBA4.jpg" alt="Stage with Vice Chancellor" loading="lazy">
                 </div>
             </div>
         </div>
@@ -327,7 +397,7 @@
     <section id="credentials" class="proof-section">
         <div class="container">
             <h3 class="section-title">Official Credentials</h3>
-            <p>For recruiters and verification purposes, the official institutional records are accessible below.</p>
+            <p>For recruiters and institutional verification, the official records are accessible below.</p>
             
             <div class="doc-grid">
                 <!-- Degree Card -->
